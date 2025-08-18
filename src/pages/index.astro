@@ -1,4 +1,6 @@
 ---
+import Navbar from "../components/Navbar.astro";
+
 // Server Only
 const name = "Bazz Buzz";
 const title = "Home Page";
@@ -13,12 +15,8 @@ const title = "Home Page";
 		<title>{title}</title>
 	</head>
 	<body>
-		<nav>
-			<a href="/">Home Page</a>
-			<a href="/about">About Page</a>
-			<a href="/contact">Contact Page</a>
-		</nav>
-		
+		<Navbar />
+
 		<h1>{name}</h1>
 
 		<p>Actual time: {new Date().toLocaleTimeString()}</p>
