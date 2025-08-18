@@ -1,5 +1,4 @@
-# Astro Starter Kit: Minimal
-
+# Astro Starter Kit: Minimal : 01-foundation-astro
 ```sh
 npm create astro@latest -- --template minimal
 ```
@@ -41,3 +40,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Branches
+
+- feat 1: astro files & actual time excercise
