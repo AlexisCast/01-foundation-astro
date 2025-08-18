@@ -45,3 +45,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 - feat 1: astro files & actual time exercise
 - feat 2: page navigation
+- feat 3: Navbar component
