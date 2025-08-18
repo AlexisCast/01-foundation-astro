@@ -43,4 +43,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Branches
 
-- feat 1: astro files & actual time excercise
+- feat 1: astro files & actual time exercise
+- feat 2: page navigation
