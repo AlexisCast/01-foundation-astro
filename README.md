@@ -49,3 +49,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - feat 4: Layouts & Props
 - feat 5: Styles By Component And Global
 - feat 6: page 404
+- feat 7: view transitions
