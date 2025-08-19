@@ -47,4 +47,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - feat 2: page navigation
 - feat 3: Navbar component
 - feat 4: Layouts & Props
-- feat 5: StylesByComponentAndGlobal
+- feat 5: Styles By Component And Global
+- feat 6: page 404
