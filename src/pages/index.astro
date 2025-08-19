@@ -1,41 +1,30 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 
 // Server Only
 const name = "Bazz Buzz";
 const title = "Home Page";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Navbar />
+<MainLayout title="Home Page">
+	<h1>{name}</h1>
 
-		<h1>{name}</h1>
+	<p>Actual time: {new Date().toLocaleTimeString()}</p>
+	<p id="current-time">Actual time(real):</p>
 
-		<p>Actual time: {new Date().toLocaleTimeString()}</p>
-		<p id="current-time">Actual time(real):</p>
+	<footer>Year 2023</footer>
 
-		<footer>Year 2023</footer>
+	<script>
+		// Client Only
+		const footer = document.querySelector("footer") as HTMLHtmlElement;
+		const currentTimeParagraph = document.querySelector(
+			"#current-time"
+		) as HTMLParagraphElement;
 
-		<script>
-			// Client Only
-			const footer = document.querySelector("footer") as HTMLHtmlElement;
-			const currentTimeParagraph = document.querySelector(
-				"#current-time"
-			) as HTMLParagraphElement;
+		const currentYear: number = new Date().getFullYear();
+		const currentLocalTime: string = new Date().toLocaleTimeString();
 
-			const currentYear: number = new Date().getFullYear();
-			const currentLocalTime: string = new Date().toLocaleTimeString();
-
-			footer.innerText = `Year ${currentYear}`;
-			currentTimeParagraph.innerText = `Actual time(real): ${currentLocalTime}`;
-		</script>
-	</body>
-</html>
+		footer.innerText = `Year ${currentYear}`;
+		currentTimeParagraph.innerText = `Actual time(real): ${currentLocalTime}`;
+	</script>
+</MainLayout>
